@@ -5,7 +5,62 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            49fbec5725fb0bca86c6f2cc678d2e7743ab6202
+            *{
+            margin: 0;
+            padding: 0;
+            }
+
+            body{
+            height:100vh;width: 100vh;
+            justify-content:center;
+            align-items: center;
+            background-color：#000;
+            display: flex;
+            position: relative;
+            padding: 12px 30px;
+            margin:30px;
+            background-color:#4d385b;
+            color：#FFF;
+            text-decoration: none;
+            letter-spacing:6px;
+
+/* 超边界隐藏*/
+
+border:1px solid #130f36;border-radius: 12px;
+
+overflow: hidden;
+
+th-child(1):hover {
+
+background-color:#FF6659;
+
+background-color:#762376;
+
+th-child(2):hover {
+
+before {
+
+position: absolute;content:'';
+
+/*默认移除按钮可视区域*/
+
+top:0;
+
+left：-50%;width: 50%;
+
+height:100%;
+
+/* 背景图使用linear-gradient方法生成60度的过渡渐变*/
+
+background-image: linear-gradient(60deg, transparent, transparent, #FFF, transparent, transparent);/*过渡动画 left 属性 0.5秒时长 */
+
+/* 原教程使用一个transparent，但实际效果并不明显，所有此处使用两个*/
+
+transition: left 0.5s;
+
+over::before {left：100%;
+
+
         </style>
     </head>  
     <body>
